@@ -3,9 +3,200 @@
   <head>
     <meta charset="uft-8">
     <Title>Quiz Game</Title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/general.js"></script>
   </head>
   <body>
-    
-  
+    <header>
+      <div class="logo"><a href='#'>Gaby's<span> Quizzer</span></a></div>
+      <!-- <div class="btnOptions"><button class="buttonOptions" type="button" name="button"></button> -->
+      <div id="optionsButton"> <a href="#">Options</a></div>
+      <div id="cheatSheetButton"> <a href="#">Cheat Sheet</a></div>
+    </header>
+    <div class="container">
+      <div id="options">
+        <input type="Text" id="numberOfQuestions">
+        <p>Here is where we will determine type of game such as single player, multiplayer,
+          flash cards,</p>
+      </div>
+      <div id="gameArea">
+        <div id="gamaDataArea">
+          <div class="gameData">
+            <a id="score">Score: <span>0</span></a>
+          </div>
+          <div class="gameData">
+            <a id="timeRemaining">Time Remaining: <span>10</span></a></br></br>
+            <a id="questionValue">Question Value: <span>10</span></a></br></br>
+            <a id="questionsRemaining">Questions Remaining: <span>3</span></a>
+          </div>
+          <div class="gameData">
+            <a id="playerName">Player: <span>Guest</span></a>
+          </div>
+        </div>
+        <div id="questionArea">
+          Click new game to begin.
+        </div>
+        <div id="answerArea">
+          <ul id=answers>
+
+            <li id=answerA>
+              <a href="#">A. <span>answerA</span></a>
+            </li>
+            <li id=answerB>
+              <a href="#">B. <span>answerB</span></a>
+            </li>
+            <li id=answerC>
+              <a href="#">C. <span>answerC</span></a>
+            </li>
+            <li id=answerD>
+              <a href="#">D. <span>answerD</span></a>
+            </li>
+        </div>
+      </div>
+
+    <div id="cheatSheet">
+      <div class="column">
+        <div id="law">
+          <ul>
+            <li>Pentateuch</li>
+            <li>Genesis</li>
+            <li>Exodus</li>
+            <li>Leviticus</li>
+            <li>Numbers</li>
+            <li>Deuteronomy</li>
+          </ul>
+        </div>
+        <div id="history">
+          <ul>
+            <li>History</li>
+            <li>Joshua</li>
+            <li>Judges</li>
+            <li>Ruth</li>
+            <li>1 Samuel</li>
+            <li>2 Samuel</li>
+            <li>1 Kings</li>
+            <li>2 Kings</li>
+            <li>1 Chronicles</li>
+            <li>2 Chronicles</li>
+            <li>Ezra</li>
+            <li>Nehemiah</li>
+            <li>Esther</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div id="poetry">
+          <ul>
+            <li>Poetry</li>
+            <li>Job</li>
+            <li>Psalms</li>
+            <li>Proverbs</li>
+            <li>Ecclesiastes</li>
+            <li>Song of Solomon</li>
+          </ul>
+        </div>
+        <div id="major">
+          <ul>
+            <li>Major</br>Prophets</li>
+            <li>Isaiah</li>
+            <li>Jeremiah</li>
+            <li>Lamentations</li>
+            <li>Ezekiel</li>
+            <li>Daniel</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div id="minor">
+          <ul>
+            <li>Minor</br>Prophets</li>
+            <li>Hosea</li>
+            <li>Joel</li>
+            <li>Amos</li>
+            <li>Obadiah</li>
+            <li>Jonah</li>
+            <li>Micah</li>
+            <li>Nahum</li>
+            <li>Habakkuk</li>
+            <li>Zephaniah</li>
+            <li>Haggai</li>
+            <li>Zechariah</li>
+            <li>Malachi</li>
+          </ul>
+        </div>
+      </div>
+      <div id="spacer">
+        <!--spacer--><a>12345678</a>
+      </div>
+
+      <div class="column">
+        <div id="gospels">
+          <ul>
+            <li>Gospels</li>
+            <li>Matthew</li>
+            <li>Mark</li>
+            <li>Luke</li>
+            <li>John</li>
+          </ul>
+        </div>
+        <div id="newHistory">
+          <ul>
+            <li>History</li>
+            <li>Acts</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column">
+        <div id="pauline">
+          <ul>
+            <li>Pauline</li>
+            <li>Romans</li>
+            <li>1 Corinthians</li>
+            <li>2 Corinthians</li>
+            <li>Galatians</li>
+            <li>Ephesians</li>
+            <li>Philippians</li>
+            <li>Colossians</li>
+            <li>1 Thessalonians</li>
+            <li>2 Thessalonians</li>
+            <li>1 Timothy</li>
+            <li>2 Timothy</li>
+            <li>Titus</li>
+            <li>Philemon</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column">
+        <div id="general">
+          <ul>
+            <li>General</br>Epistles</li>
+            <li>Hebrews</li>
+            <li>James</li>
+            <li>1 Peter</li>
+            <li>2 Peter</li>
+            <li>1 John</li>
+            <li>2 John</li>
+            <li>3 John</li>
+            <li>Jude</li>
+          </ul>
+        </div>
+        <div id="revelation">
+          <ul>
+            <li>Revelation</li>
+            <li>Revelation</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
   </body>
 </html>

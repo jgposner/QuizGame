@@ -1,1 +1,257 @@
-a
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 800px;
+  height: 55px;
+  background-color: #2c3e50;
+}
+.logo {
+  float: left;
+  margin: 10px 0 0 10px;
+  width: 200px;
+}
+.logo a {
+  font-size: 1.8em;
+  color: #fff;
+}
+.logo a span {
+  font-weight: 300;
+}
+
+#optionsButton {
+  width: 200px;
+  height: 55px;
+  display: block;
+  float: right;
+  background: #555;
+  border: 2px solid #000;
+  transition-duration: .05s;
+}
+
+#optionsButton:hover {
+  background: #333;
+}
+
+#optionsButton a {
+  color: #fff;
+  display: block;
+  height: 55px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+#cheatSheetButton {
+  width: 200px;
+  height: 55px;
+  display: block;
+  float: right;
+  background: #555;
+  border: 2px solid #000;
+  /* transition-duration: .05s; */
+}
+
+#cheatSheetButton:hover {
+  background: #333;
+}
+
+#cheatSheetButton a {
+  color: #fff;
+  display: block;
+  height: 55px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+div#container {
+  width: 800px;
+  margin: 0px auto;
+  padding: 100px;
+  border: 2px solid #000;
+}
+
+a#score {
+  font-size: 2.5em;
+  padding-left:20px;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+#score a span {
+
+}
+
+
+.gameData {
+  width: 266px;
+  height: 150px;
+  float: left;
+  border: 1px solid #aaa;
+  padding: 20px 0;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+div #options {
+  position: absolute;
+  /*z-index: 3;*/
+  background: #555;
+  width: 800px;
+  height: 400px;
+  border: 2px solid #111;
+  display: none;
+}
+div#gameArea {
+  /*position: absolute;*/
+  /*z-index: 2;*/
+  width: 800px;
+}
+
+div#gameDataArea {
+  float: left;
+  width:800px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  background: #eee;
+  }
+div#questionArea {
+  float: left;
+  width:400px;
+  height: 300px;
+  border: 2px solid #aaa;
+  background: #eee;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1.3em;
+}
+
+div#answerArea {
+  width:400px;
+  background: #eee;
+  float: left;
+}
+ul#answers li {
+  list-style: none;
+  margin: 20px;
+}
+ul#answers li a {
+  color: #ccc;
+  display: block;
+  padding: 5px;
+  border: 1px solid #444;
+  height: 50px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+div#cheatSheet {
+  /* position: relative;  This line makes the first two answers unclickable, I
+                       think it is because the cheatsheet would cover up
+                       the first two answers if it was in position: absolute; */
+  width: 800px;
+  height: 300px;
+  font-weight: bold;
+  font-size: 1.1em;
+
+}
+
+#cheatSheet  li {
+  list-style: none;
+}
+
+#cheatSheet ul :first-child {
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+
+
+
+div#minor {
+  padding: 5px;
+  background-color: purple;
+}
+
+div#major {
+  padding: 5px;
+  background-color: violet;
+}
+
+div#poetry {
+  padding: 5px;
+  background-color: blue;
+}
+
+div#history {
+  padding: 5px;
+  background-color: lightblue;
+}
+
+div#law {
+  padding: 5px;
+  background-color: aqua;
+}
+
+div#gospels {
+  padding: 5px;
+  background-color: red;
+  }
+
+div#newHistory {
+  padding: 5px;
+  background-color: orangered;
+}
+
+div#pauline {
+  padding: 5px;
+  background-color: khaki;
+}
+div#general {
+  padding: 5px;
+  background-color: yellow;
+}
+div#revelation {
+  padding: 5px;
+  background-color: goldenrod;
+}
+
+div.column {
+  position: relative;
+  float: left;
+}
+
+div#spacer {
+  float: left;
+  color: white;
+}
+
+ul#answers li#answerA {
+  background: skyblue;
+}
+ul#answers li#answerB {
+  background: darkorange;
+}
+ul#answers li#answerC {
+  background: green;
+}
+ul#answers li#answerD {
+  background: yellow;
+}
